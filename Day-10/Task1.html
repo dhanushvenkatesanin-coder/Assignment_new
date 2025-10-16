@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background:linear-gradient(to right,rgb(22, 22, 241),rgb(202, 188, 247));
+        }
+
+        .banner{
+            height: 100px;
+            background: radial-gradient(circle,rgb(61, 52, 238),rgb(6, 181, 251));
+            text-align: center;
+            padding-top: 20px;
+            text-transform: uppercase;
+            text-shadow: 1px 5px 5px;
+            }
+
+            .relative{
+                background-image: url(./will\ smith.jpeg);
+                background-size: auto;
+                position: relative;
+                left: 4%;
+
+                height: 600px;
+                width: 90%;
+                border: 3px solid blueviolet;
+                margin-top: 20px;
+                box-shadow: 5px 5px 50px;
+                color: rgb(253, 253, 254);
+               
+            }
+
+            .absolute{position:absolute;
+                left: 4%;
+                background-color:rgb(115, 94, 251);
+                color: aliceblue;
+                height: 400px;
+                width: 90%;
+                border: 3px solid blueviolet;
+                margin-top: 20px;
+             box-shadow: 5px 5px 50px;
+
+               }
+
+            .fixed
+               {position: fixed;
+                right:10px ;
+                top: 110px;
+            
+        color: aliceblue;}
+
+                strong{
+                    font-size: 20px;
+                }
+            .nav{
+                position: fixed;
+                right:80px ;
+                top: 110px;
+                z-index: 5;
+            }
+            li
+            {
+                display: inline-block;
+
+            }
+           
+          
+            
+            
+    </style>
+</head>
+<body>
+    
+<div class="banner">
+    <h1>This is banner section</h1>
+</div>
+<nav class="nav">
+    <ul>
+        <li class="li1"><a href="./About.html">About -</a> </li>
+        <li class="li3"><a href="./Task1.html">Home-</a> </li>
+    </ul>
+</nav>
+
+<div class="relative">
+    <h1>WILL SMITH(american actor)</h1>
+    
+ <h2><ins>Biography</ins></h2>
+ <ul>
+    <li>Full name:Willard Carroll Smith Jr.</li>
+    <li>Born:september 25,1968,in Philadelphina,Pennsylvania,usa</li>
+   
+ </ul>
+ <h2>Career</h2>
+ <p><h3>Music</h3></p>
+ <p>He begin his career in the 1980s as part of the hip-hop duo DJ Jassy Jeff & The Fresh prince</p>
+<h3>Acting/Film&Television</h3>
+<p>Trasitioned into film -major breakthrough with bad boys,followed by independent day,men in black etc.Established him as a global box office star</p>
+<h2>Major Awards & Achievement</h2>
+<p>He won Academy <strong>Award(oscar),Golden Globe,BAFTA and multi Grammy Awards</strong></p>
+
+</div>
+
+
+
+<div class="absolute">
+<h1>Best Movies</h1>
+<ol>
+    <li>1.The Pursuit of Happyness</li><br>
+    <li>2.Alladin</li><br>
+    <li>3.I robot</li><br>
+    <li>4.Emancipation</li><br>
+    <li>5.Men in block</li><br>
+    <li>6.Bad Boys</li><br>
+    <li>7.Independent Day</li><br>
+    <li>8.I Am Legend</li><br>
+    <li>9.Enemy of the state</li><br>
+    <li>10.Hitch</li>
+</ol>
+    
+</div>
+
+    <p class="fixed"><a href="">contact us</a>
+        
+</p>
+
+
+</body>
+</html>
