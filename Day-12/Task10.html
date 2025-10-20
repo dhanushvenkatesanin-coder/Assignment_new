@@ -6,12 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        * {
-            background-color:white;
-        }
-       
-
-        .projects {
+       .projects {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-areas:
@@ -44,7 +39,7 @@
             border: 2px solid black;
             border-radius: 10px;
             padding: 10px;
-              box-shadow: 30px 40px 100px;
+              box-shadow: 10px 10px 10px;
         }
 
         .pro3 {
@@ -53,7 +48,7 @@
             border: 2px solid black;
             border-radius: 10px;
             padding: 10px;
-              box-shadow: 30px 40px 100px;
+              box-shadow: 10px 10px 10px;
         }
 
         .pro4 {
@@ -62,60 +57,70 @@
             border: 2px solid black;
             border-radius: 10px;
             padding: 10px;
-              box-shadow: 30px 40px 100px;
+              box-shadow: 10px 10px 10px;
         }
 
         .nav {
+            display: flex;
+            justify-content: space-around;
             width: 100%;
             height: 70px;
-            background-color: rgb(35, 135, 198);
+            background-color: rgb(148, 208, 246);
 
         }
     .footer{
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: rgb(23, 154, 236);
+        background-color: rgb(136, 203, 245);
         margin-top: 130px;
     }
-    .pro2:hover:{              
-
+    .hover:hover{ 
+        box-shadow:10px 10px 50px;
 
     }
+
+    a:hover{
+        color: rgb(230, 43, 6);
+    }
+   
 
     </style>
 </head>
 
 <body>
     <div class="nav">
+        <p><a href="#About me">About me</a></p>
+        <p><a href="#My project">My projects</a></p>
+        <p><a href="#contact me">Contact me</a></p>
 
     </div>
     <div class="container">
 
-     <center> <div class="about">
-            <h1>About Me</h1>
+     <center> <div class="about" id="About me">
+            <h1><ins>About Me</ins></h1>
             <p>I am a passionate web developer who loves creating beautiful and functional websites using HTML and CSS.
             </p>
         </div></center>  
 
         <div class="projects">
 
-            <h1 class="pro1">My Projects</h1>
+            <h1 class="pro1" id="My project"><ins>My Projects</ins></h1>
 
 
-            <div class="pro2">
+            <div class="pro2 hover">
                 <h2>Portfolio Website</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid iure error exercitationem repellat
                     labore. Libero, nobis dicta? Tempora, voluptates voluptatum!</p>
             </div>
 
-            <div class="pro3">
+            <div class="pro3 hover">
                 <h2>CSS Animation</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos praesentium illo impedit, accusamus ab
                     ratione cupiditate doloremque distinctio necessitatibus quasi.</p>
             </div>
 
-            <div class="pro4">
+            <div class="pro4 hover">
                 <h2>Interactive resume</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate unde autem debitis, dolore hic
                     porro
@@ -123,7 +128,7 @@
             </div>
         </div>
 
-        <div class="footer">
+        <div class="footer" id="contact me">
             <h2>Contact Me</h2>
             <P>Email:<a href="">dhanushdhanu10114@gmail.com</a></P>
 
@@ -134,5 +139,6 @@
 
 
 </body>
+
 
 </html>
