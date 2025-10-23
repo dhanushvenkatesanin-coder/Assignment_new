@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 8px;
+        }
+
+        *{
+            margin: 0px; padding: 0px; 
+            box-sizing: border-box;
+        }
+        body{
+            height: 980px;
+            background-color: lightskyblue;
+        }
+
+        nav{background-color: black;
+            display: flex;
+            justify-content: space-around;
+            
+        }
+        a{
+            text-decoration: none;
+           color: white;
+           font-size: 20px;
+        }
+
+        header{
+            background:linear-gradient( to right,);
+            height: 300px;
+            align-content: center;
+            justify-items: center;
+             text-shadow: 1px 1px 1px;
+             background: linear-gradient(to right,rgb(81, 177, 237),lightskyblue);
+            
+           }
+           h1{
+            font-size: 60px;
+           }
+           h4{
+            font-size: 30px;
+           }
+           h2{
+            font-size: 30px;
+           }
+           p{
+            font-size: 20px;
+            text-align-last: center;
+           }
+
+           aside{
+            
+            height: 200px;
+            align-content: center;
+            justify-items: center;
+            background: linear-gradient(to right,rgb(99, 185, 237),rgb(109, 192, 243));
+
+           }
+
+           main{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: " project project"
+                                  "profile profile"
+                                  "landing animation"
+                                  ;
+            align-content: center;
+            justify-items: center;
+            gap: 30px;
+             background: linear-gradient(to right,rgb(81, 177, 237),lightskyblue);
+      }
+           .project{
+            grid-area: project;
+           }
+           .profile{
+           justify-items: center;
+            grid-area: profile;
+           }
+           .landing{
+            grid-area:landing;
+           }
+           .animation{
+            grid-area:animation;
+           }
+
+
+           .div{
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            height: 125px
+            
+           }
+         article{
+            background-color:rgb(73, 174, 237);
+            height:170px;
+             align-content: center;
+            justify-items: center;
+         }
+footer{
+    background-color: black;
+    color: white;
+}
+
+.div:hover{
+    box-shadow: 1px 1px 10px;
+
+}
+
+
+@media(max-width:700px){
+    nav{
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+  main{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas: " project"
+                                  " profile"
+                                  "landing "
+                                  "animation"
+                                  ;
+            align-content: center;
+            justify-items: center;
+            gap: 30px;
+             background: linear-gradient(to right,rgb(81, 177, 237),lightskyblue);
+      }
+           .project{
+            grid-area: project;
+           
+           }
+           .profile{
+           justify-items: center;
+            grid-area: profile;
+            width: 90%;
+           }
+           .landing{
+            grid-area:landing;
+            width: 90%;
+           }
+           .animation{
+            grid-area:animation;
+            width: 90%;
+           }
+}
+
+h2,h1,h4{
+    color:blue;
+}
+
+
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#project">Project</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <header id="about">
+        <h1>Hi, I'm Dhanush</h1>
+        <h4>Front-End Developer|HTML & CSS Enthusiast</h4>
+    </header>
+
+    <aside><h2>About Me</h2>
+    <p>I am a passionate web developer who loves creating beautiful and functional websites using HTML & CSS</p></aside>
+
+    <main id="project">
+        <div class="project">
+<h2>My Project</h2>
+
+        </div>
+        
+        <div class="profile div">
+            <h2>Protfolio Site</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, cupiditate!</p>
+
+        </div>
+
+        <div class="landing div">
+            <h2>Landing Page</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, odit!</p>
+
+        </div>
+
+        <div class="animation div">
+            <h2>CSS Animation</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, dolores?</p>
+
+        </div>
+
+    </main>
+
+    <article  id="contact">
+        <h2>Contact Me</h2>
+       <p>Email:dhanush@gmail.com</p>
+       
+    </article>
+
+<footer>
+    <p>&copy; 2025 Dhanush. All rights reserved.
+
+    </p>
+</footer>
+    
+</body>
+</html>
