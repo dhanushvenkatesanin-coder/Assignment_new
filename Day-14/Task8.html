@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            position: relative;
+            top: 90vh;
+        }
+       
+        .box{
+            width: 95vw;
+            height: 13px;
+            border: 1px solid black;
+              border-radius: 22px;
+}
+
+        .bar{
+            width: 95vw;
+            height: 10px;
+            border: 2px solid black;
+            background-color: green;
+            border-radius: 20px;
+
+            animation-name: bar;
+            animation-duration: 10s;
+            animation-fill-mode:forwards;
+            animation-iteration-count:2;
+            animation-timing-function: linear;
+
+        }
+
+
+
+        @keyframes bar {
+            0%{ width: 0vw;
+           
+                }
+
+                100%{ width: 95vw;
+            height: 10px;
+
+                }
+
+
+            
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="box">
+        <div class="bar"></div>
+    </div>
+    </div>
+    
+    
+</body>
+</html>

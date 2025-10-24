@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background-color: rgb(238, 238, 238);
+             box-sizing: border-box;
+           
+        }
+
+        .container {
+            margin: 0px;
+            border: 2px solid black;
+            justify-items: center;
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+
+        .product {
+            margin: 10px;
+            height: 360px;
+            width: 200px;
+            border: 2px solid black;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        
+        .product:hover{
+           box-shadow: 1px 1px 15px;}
+
+
+        .image {
+            padding-left: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: lightslategray;
+        }
+
+        .details {
+            padding: 5px;
+
+        }
+        h1{
+            text-align: center;
+        }
+
+        .small{
+            border: 2px solid black;
+            justify-items:center;
+           margin: 10px;
+           }
+           button{
+            margin-left: 8vw;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            height: 30px;
+            width: 90px;
+            
+           }
+           
+           button:hover{
+          background-color: green;}
+
+
+           @media(max-width:990px)  {
+      .container {
+            
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+ } 
+
+@media(max-width:600px){
+     .container {
+            
+            display: grid;
+            grid-template-columns: 1fr ;
+        }}
+
+    
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <h1>Buy your books here</h1>
+    <div class="container">
+
+
+        <div class="0ne small">
+            <div class="product">
+                <div class="image">
+                    <img src="./book1.avif" alt="the psychology of money">
+                </div>
+                <div class="details">
+                    <h2>The psychology of money</h2>
+                    <h3> $35 30% off<del>$50</del> </h3>
+                </div>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae dolores aliquid tempore voluptas,
+                doloribus exercitationem placeat labore itaque quam earum.</p>
+                <button>Buy now</button>
+            
+        </div>
+
+
+        <div class="two small">
+            <div class="product">
+                <div class="image">
+                    <img src="./book2.avif" alt="Believe in yourself">
+                </div>
+                <div class="details">
+                    <h2>Believe in yourself</h2>
+                    <h3> $35 30% off<del>$50</del></h3>
+
+                </div>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae dolores aliquid tempore voluptas,
+                doloribus exercitationem placeat labore itaque quam earum.</p>
+                <button>Buy now</button>
+
+        </div>
+
+
+        <div class="three small">
+            <div class="product">
+                <div class="image">
+                    <img src="./book3.avif" alt="power of your subconsious mind">
+                </div>
+                <div class="details">
+                    <h2>The powe of your subconsious mind</h2>
+                    <h3> $35 30% off<del>$50</del></h3>
+                </div>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae dolores aliquid tempore voluptas,
+                doloribus exercitationem placeat labore itaque quam earum.</p>
+                <button>Buy now</button>
+
+        </div>
+
+
+        <div class="four small">
+            <div class="product">
+                <div class="image">
+                    <img src="./book4.avif" alt="rich dad pour dad">
+                </div>
+                <div class="details">
+                    <h2>Rich Dad Pour Dad</h2>
+                    <h3> $35 30% off<del>$50</del></h3>
+                </div>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae dolores aliquid tempore voluptas,
+                doloribus exercitationem placeat labore itaque quam earum.</p>
+                <button>Buy now</button>
+
+              
+            
+        </div>
+
+
+        <div class="two small">
+            <div class="product">
+                <div class="image">
+                    <img src="./book2.avif" alt="Believe in yourself">
+                </div>
+                <div class="details">
+                    <h2>Believe in yourself</h2>
+                    <h3> $35 30% off<del>$50</del></h3>
+
+                </div>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae dolores aliquid tempore voluptas,
+                doloribus exercitationem placeat labore itaque quam earum.</p>
+                <button>Buy now</button>
+
+        </div>
+
+
+        <div class="three small">
+            <div class="product">
+                <div class="image">
+                    <img src="./book3.avif" alt="power of your subconsious mind">
+                </div>
+                <div class="details">
+                    <h2>The powe of your subconsious mind</h2>
+                    <h3> $35 30% off<del>$50</del></h3>
+                </div>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae dolores aliquid tempore voluptas,
+                doloribus exercitationem placeat labore itaque quam earum.</p>
+                <button>Buy now</button>
+
+        </div>
+
+        <div class="0ne small">
+            <div class="product">
+                <div class="image">
+                    <img src="./book1.avif" alt="the psychology of money">
+                </div>
+                <div class="details">
+                    <h2>The psychology of money</h2>
+                    <h3> $35 30% off<del>$50</del> </h3>
+                </div>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae dolores aliquid tempore voluptas,
+                doloribus exercitationem placeat labore itaque quam earum.</p>
+                <button>Buy now</button>
+            
+        </div>
+
+
+        <div class="two small">
+            <div class="product">
+                <div class="image">
+                    <img src="./book2.avif" alt="Believe in yourself">
+                </div>
+                <div class="details">
+                    <h2>Believe in yourself</h2>
+                    <h3> $35 30% off<del>$50</del></h3>
+
+                </div>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae dolores aliquid tempore voluptas,
+                doloribus exercitationem placeat labore itaque quam earum.</p>
+                <button>Buy now</button>
+
+        </div>
+
+
+        <div class="three small">
+            <div class="product">
+                <div class="image">
+                    <img src="./book3.avif" alt="power of your subconsious mind">
+                </div>
+                <div class="details">
+                    <h2>The powe of your subconsious mind</h2>
+                    <h3> $35 30% off<del>$50</del></h3>
+                </div>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae dolores aliquid tempore voluptas,
+                doloribus exercitationem placeat labore itaque quam earum.</p>
+                <button>Buy now</button>
+
+        </div>
+
+        <div class="0ne small">
+            <div class="product">
+                <div class="image">
+                    <img src="./book1.avif" alt="the psychology of money">
+                </div>
+                <div class="details">
+                    <h2>The psychology of money</h2>
+                    <h3> $35 30% off<del>$50</del> </h3>
+                </div>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae dolores aliquid tempore voluptas,
+                doloribus exercitationem placeat labore itaque quam earum.</p>
+                <button>Buy now</button>
+            
+        </div>
+
+
+        <div class="two small">
+            <div class="product">
+                <div class="image">
+                    <img src="./book2.avif" alt="Believe in yourself">
+                </div>
+                <div class="details">
+                    <h2>Believe in yourself</h2>
+                    <h3> $35 30% off<del>$50</del></h3>
+
+                </div>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae dolores aliquid tempore voluptas,
+                doloribus exercitationem placeat labore itaque quam earum.</p>
+                <button>Buy now</button>
+
+        </div>
+
+
+        <div class="three small">
+            <div class="product">
+                <div class="image">
+                    <img src="./book3.avif" alt="power of your subconsious mind">
+                </div>
+                <div class="details">
+                    <h2>The powe of your subconsious mind</h2>
+                    <h3> $35 30% off<del>$50</del></h3>
+                </div>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae dolores aliquid tempore voluptas,
+                doloribus exercitationem placeat labore itaque quam earum.</p>
+                <button>Buy now</button>
+
+        </div>
+
+
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
