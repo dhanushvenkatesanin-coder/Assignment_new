@@ -1,5 +1,8 @@
 let a=25
-let a='twenty five'
+ a='twenty five'
 console.log(a);
 
-// it showing.   SyntaxError: Identifier 'a' has already been declared
+var b=35
+b='thirtey'
+console.log(b);
+
